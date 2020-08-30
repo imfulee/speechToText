@@ -3,3 +3,9 @@ __pycache__/*
 *.class
 texts/*
 audios/*
+include
+lib64
+lib
+bin
+share
+pyvenv.cfg

@@ -8,44 +8,29 @@ Python 3.7+ is required because subprocess.run receives capture_output parameter
 Install the newest version is OK.
 
 ## Python虛擬環境
-### 安裝virtualenv
-pip install virtualenv
 
-### 架構virtualenv
-cd 目標資料夾  
-virtualenv 子資料夾名稱  
-將創一個子資料夾作為虛擬環境
+### 架構虛擬環境
+
+```bash
+cd <venv>
+python3 -m venv .
+source bin/activate # POSIX
+Scripts\activate # DOS
+```
 
 ### 切換虛擬環境
-(Linux)source 那個子資料夾/bin/activate
-
-(Windows)那個子資料夾\Scripts\activate
 
 (Set-ExecutionPolicy RemoteSigned)
 
-### 模組
-#### Flask
-pip install Flask
+### pip 模組
 
-*import flask*
-#### numpy
-pip install numpy
-
-or install by wheel: https://www.lfd.uci.edu/~gohlke/pythonlibs/
-#### SpeechRecognition
-pip install SpeechRecognition
-
-*import speech_recognition*
-#### networkx (optional, one of networkx and pyswip is needed)
-pip install networkx
-#### pyswip (optional, one of networkx and pyswip is needed)
-套件本身需要SWI-Prolog的環境才能安裝
-
-由於之前已經載明了需要SWI-Prolog的環境，所以這個條件應是自動滿足。
-
-pip install pyswip
+```bash
+pip install Flask numpy SpeechRecognition
+pip install networkx pyswip wheel pynput pyaudio # optional
+```
 
 #### pynput, pyaudio (optional)
+
 speechToText.py當中使用的  
 定義了一套在命令行使用的API  
 網頁app沒有調用  
