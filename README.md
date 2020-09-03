@@ -4,6 +4,14 @@
 ## Python version
 Python 3.7+ is required because subprocess.run receives capture_output parameter.
 
+## setup.sh
+
+This is a small script I wrote for ease of setup whenever I want to switch between Linux machines. There are no root privilages for the package manager install lines, thus, 
+
+```bash
+sudo bash setup.sh
+``` 
+
 ## SWI-Prolog
 Install the newest version is OK.
 
@@ -28,6 +36,14 @@ Scripts\activate # DOS
 pip install Flask numpy SpeechRecognition
 pip install networkx pyswip wheel pynput pyaudio # optional
 ```
+
+(Linux) Might require you to install
+
+```bash
+apt install python3-dev portaudio19-dev
+dnf install python3-devel portaudio-devel
+```
+
 
 #### pynput, pyaudio (optional)
 
