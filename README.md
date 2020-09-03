@@ -1,10 +1,12 @@
 # speechToText
 資管專題
 
-## Python version
+## Environment 
+
+### Python version
 Python 3.7+ is required because subprocess.run receives capture_output parameter.
 
-## setup.sh
+### Setup shell file (Linux)
 
 This is a small script I wrote for ease of setup whenever I want to switch between Linux machines. There are no root privilages for the package manager install lines, thus, 
 
@@ -12,12 +14,17 @@ This is a small script I wrote for ease of setup whenever I want to switch betwe
 sudo bash setup.sh
 ``` 
 
-## SWI-Prolog
+### SWI-Prolog
 Install the newest version is OK.
 
-## Python虛擬環境
+(Linux) Might require you to install
 
-### 架構虛擬環境
+```bash
+apt install swi-pl
+dnf install pl
+```
+
+### 架構 Python 虛擬環境
 
 ```bash
 cd <venv>
@@ -26,7 +33,7 @@ source bin/activate # POSIX
 Scripts\activate # DOS
 ```
 
-### 切換虛擬環境
+### 切換 Python 虛擬環境
 
 (Set-ExecutionPolicy RemoteSigned)
 
@@ -45,7 +52,7 @@ dnf install python3-devel portaudio-devel
 ```
 
 
-#### pynput, pyaudio (optional)
+### pynput, pyaudio (optional)
 
 speechToText.py當中使用的  
 定義了一套在命令行使用的API  
@@ -54,8 +61,7 @@ speechToText.py當中使用的
 
 基本上web_recognize.py與speechToText.py這兩個檔案的東西都可以再模組化
 
-### 額外檔案
-#### API_keys.py (設定使用語音辨識API所需要的key)
+### API_keys.py (設定使用語音辨識API所需要的key)
 內容大概長這樣
 ```Python
 import globalvar as gl
@@ -69,7 +75,7 @@ gl.set_value("houndify_id", "...")
 gl.set_value("houndify_key", "...")
 ```
 
-### 一些API解說
+## API解說
 因為寫這段時已經過了一年半載，所以沒辦法寫得太詳細
 
 #### string_align.py
