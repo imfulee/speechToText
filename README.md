@@ -3,6 +3,8 @@
 
 ## Environment 
 
+This is tested on both Linux Mint 20 and Fedora 32. But originally developed on Windows.
+
 ### Python version
 Python 3.7+ is required because subprocess.run receives capture_output parameter.
 
@@ -15,19 +17,22 @@ sudo bash setup.sh
 ``` 
 
 ### SWI-Prolog
-Install the newest version is OK.
 
-(Linux) Might require you to install
+Install (Windows and Mac)
+
+Go to [https://www.swi-prolog.org/](https://www.swi-prolog.org/) and download the latest version through the website.
+
+Install (Linux) 
 
 ```bash
-apt install swi-pl
+apt install swi-prolog
 dnf install pl
 ```
 
 ### 架構 Python 虛擬環境
 
 ```bash
-cd <venv>
+cd <dir>
 python3 -m venv .
 source bin/activate # POSIX
 Scripts\activate # DOS
@@ -44,7 +49,7 @@ pip install Flask numpy SpeechRecognition
 pip install networkx pyswip wheel pynput pyaudio # optional
 ```
 
-(Linux) Might require you to install
+(Linux) Might require you to first install
 
 ```bash
 apt install python3-dev portaudio19-dev
