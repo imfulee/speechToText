@@ -4,7 +4,7 @@ if [ -f /etc/redhat-release ]; then
 fi
 
 if [ -f /etc/lsb-release ]; then
-  apt install python3-dev portaudio19-dev swi-pl
+  apt install python3-dev portaudio19-dev swi-prolog
 fi
 
 # APE setup
