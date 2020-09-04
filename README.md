@@ -5,8 +5,17 @@
 
 This is tested on both Linux Mint 20 and Fedora 32. But originally developed on Windows.
 
-### Python version
+### Git submodules
 
+If you're unfamiliar with submodules check out the [documentaton](https://git-scm.com/book/en/v2/Git-Tools-Submodules), and just type in the following command 
+
+```bash
+cd APE
+git submodule init
+git submodule update
+```
+
+### Python version
 Python 3.7+ is required because subprocess.run receives capture_output parameter.
 
 ### Setup shell file (Linux)
