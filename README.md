@@ -3,7 +3,18 @@
 
 ## Environment 
 
+### Git submodules
+
+Type the following command to get the APE repository loaded with files.
+
+```bash
+cd APE
+git submodule init
+git submodule update
+```
+
 ### Python version
+
 Python 3.7+ is required because subprocess.run receives capture_output parameter.
 
 ### Setup shell file (Linux)
