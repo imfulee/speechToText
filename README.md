@@ -5,6 +5,14 @@
 
 This is tested on both Linux Mint 20 and Fedora 32. But originally developed on Windows.
 
+### Setup shell file (Linux)
+
+This is a small script I wrote for ease of setup whenever I want to switch between Linux machines. There are no root privilages for the package manager install lines, thus, 
+
+```bash
+sudo bash setup.sh
+``` 
+
 ### Git submodules
 
 If you're unfamiliar with submodules check out the [documentaton](https://git-scm.com/book/en/v2/Git-Tools-Submodules), and just type in the following command 
@@ -16,15 +24,8 @@ git submodule update
 ```
 
 ### Python version
+
 Python 3.7+ is required because subprocess.run receives capture_output parameter.
-
-### Setup shell file (Linux)
-
-This is a small script I wrote for ease of setup whenever I want to switch between Linux machines. There are no root privilages for the package manager install lines, thus, 
-
-```bash
-sudo bash setup.sh
-``` 
 
 ### SWI-Prolog
 
